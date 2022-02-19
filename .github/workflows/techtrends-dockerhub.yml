@@ -29,7 +29,6 @@ jobs:
           vykhvan/techtrends
           ghcr.io/vykhvan/techtrends
         tags: |
-          tags: |
           type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'main') }}
           type=ref,event=tag
           
