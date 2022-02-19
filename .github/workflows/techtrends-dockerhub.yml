@@ -30,7 +30,7 @@ jobs:
           ghcr.io/vykhvan/techtrends
         tags: |
           tags: |
-          type=raw,value=latest,enable=${{ endsWith(GitHub.ref, ‘main’) }}
+          type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'main') }}
           type=ref,event=tag
           
     - name: Set up QEMU
