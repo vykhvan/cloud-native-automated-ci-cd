@@ -5,7 +5,7 @@ TechTrends is an online website used as a news sharing platform, that enables co
 The web application is written using the Python Flask framework. It uses SQLite, a lightweight disk-based database to store the submitted articles.
 
 ### TechTrends web application components
-<img src="images/techtrends-architecture.png" width="50%">
+<img src="images/techtrends-architecture.png" width="70%">
 
 ### TechTrends sitemap
-<img src="images/techtrends-sitemap.png" width="50%">
+<img src="images/techtrends-sitemap.png" width="70%">
