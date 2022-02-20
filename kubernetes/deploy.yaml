@@ -21,12 +21,12 @@ spec:
         app: techtrends
     spec:
       containers:
-      - image: techtrends:latest
+      - image: vykhvan/techtrends:latest
         imagePullPolicy: IfNotPresent 
         name: techtrends
         ports:
         - containerPort: 3111
-          protocal: TCP
+          protocol: TCP
         livenessProbe:
           httpGet:
             path: /healthz
