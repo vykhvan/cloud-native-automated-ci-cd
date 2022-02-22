@@ -29,12 +29,12 @@ spec:
           protocol: TCP
         livenessProbe:
           httpGet:
-            path: {{ .Values.livenessProbe }}
-            port: 3111
+            path: {{ .Values.livenessProbe.httpGet.path }}
+            port: {{ .Values.livenessProbe.httpGet.port}}
         readinessProbe:
           httpGet:
-            path: {{ .Values.readinessProbe }}
-            port: 3111
+            path: {{ .Values.readinessProbe.httpGet.path }}
+            port: {{ .Values.readinessProbe.httpGet.port }}
         resources:
           requests:
             memory: {{ .Values.resources.requests.memory }}
