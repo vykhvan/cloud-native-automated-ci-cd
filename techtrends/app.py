@@ -1,3 +1,4 @@
+import sys
 import logging
 import sqlite3
 
@@ -122,5 +123,9 @@ def metrics():
 
 # start the application on port 3111
 if __name__ == "__main__":
-    logging.basicConfig(format="%(asctime)s %(message)s", level=logging.DEBUG)
+    stdout_handler = logging.StreamHandler(sys.stdout)
+    stderr_handler = logging.StreamHandler(sys.stderr)
+    handlers = [stderr_handler, stdout_handler]
+    format = "%(asctime)s - %(levelname)s - %(message)s"
+    logging.basicConfig(format=format, level=logging.DEBUG, handlers=handlers)
     app.run(host="0.0.0.0", port="3111")
